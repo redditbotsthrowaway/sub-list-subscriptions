@@ -14,6 +14,7 @@ reddit = praw.Reddit(client_id = str(a),
                      password = str(d), 
                      user_agent = "test")
 
+# feel free to edit the list as you please, though it's unlikely any large college subreddit won't be included
 
 college_sub_list = ['Aberystwyth','AcadiaU','Algonquin_College','amarillocollege','AmericanU','amherstcollege','AndersonUniversity','appstate','aquinas',
                     'ASU','ArkansasState','auburn','australiancatholicuni','Anu','apu','Babson','BallState','Baruch','baylor','berea','Berklee',
