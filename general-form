@@ -1,0 +1,24 @@
+import praw
+import time
+from time import sleep
+import random
+
+a = input("What's your client_id? ")
+b = input("What's your client secret? ")
+c = input("What's your username? ")
+d = input("What's your password? ")
+
+reddit = praw.Reddit(client_id = str(a), 
+                     client_secret = str(b),
+                     username = str(c), 
+                     password = str(d), 
+                     user_agent = "test")
+
+# can insert list of subs to subscribe to here in the form 'sub name', i.e. with the "r/"
+sub_list = []
+
+for sub in sub_list:
+    subreddit = reddit.subreddit(sub)
+    a = random.randint(1,3)
+    subreddit.subscribe()
+    sleep(a)
